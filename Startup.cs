@@ -38,6 +38,8 @@ namespace concurrent_queues
 
       services.AddSingleton(new TodoItemService(Configuration));
 
+      services.AddSingleton(Configuration);
+
       services.AddMvc();
     }
     
